@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TokenCell" id="gTV-IL-0wX" customClass="TokenCollectionViewCell" customModule="LealBusinessDashboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-GC-TD4">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hi" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-3e-9XE">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7nY-cG-Dn3"/>
+                                    <constraint firstAttribute="width" constant="100" id="EP5-ue-0MJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="e6p-RW-2T0"/>
+                            <constraint firstAttribute="width" constant="100" id="lh2-YT-ZRY"/>
+                            <constraint firstItem="gdi-3e-9XE" firstAttribute="centerX" secondItem="y8b-GC-TD4" secondAttribute="centerX" id="mb9-JS-Qig"/>
+                            <constraint firstItem="gdi-3e-9XE" firstAttribute="centerY" secondItem="y8b-GC-TD4" secondAttribute="centerY" id="pw7-2a-u4Z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="y8b-GC-TD4" secondAttribute="bottom" id="Jrz-Qi-55Z"/>
+                <constraint firstItem="y8b-GC-TD4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QJm-hv-7DO"/>
+                <constraint firstAttribute="trailing" secondItem="y8b-GC-TD4" secondAttribute="trailing" id="koi-jH-Ec2"/>
+                <constraint firstItem="y8b-GC-TD4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lnY-cv-0Z4"/>
+            </constraints>
+            <size key="customSize" width="155" height="140"/>
+            <connections>
+                <outlet property="bView" destination="y8b-GC-TD4" id="FKh-s3-He7"/>
+                <outlet property="image" destination="gdi-3e-9XE" id="LsN-60-YqV"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="139.95535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hi" width="274" height="225"/>
+    </resources>
+</document>

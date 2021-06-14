@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" rowHeight="203" id="KGk-i7-Jjw" customClass="ContactAndLocationTableViewCell" customModule="LealBusinessDashboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MI8-7q-BVY">
+                        <rect key="frame" x="10" y="10" width="344" height="180"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact and Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f43-xC-bar">
+                                <rect key="frame" x="0.0" y="0.0" width="344" height="26.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="OgV-JT-fOV">
+                                <rect key="frame" x="0.0" y="31.5" width="344" height="148.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U09-4e-ZCR">
+                                        <rect key="frame" x="20" y="20" width="314" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="buX-yS-VCs">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lrZ-C8-V9v">
+                                                        <rect key="frame" x="0.0" y="0.5" width="30" height="28.5"/>
+                                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="MPL-jK-2hX"/>
+                                                            <constraint firstAttribute="height" constant="30" id="gUV-66-oc9"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8s-Ox-aqg">
+                                                        <rect key="frame" x="40" y="0.0" width="274" height="30"/>
+                                                        <state key="normal" title="Call Now!"/>
+                                                        <connections>
+                                                            <action selector="callButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cNt-Id-qwV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S1E-vc-gn6">
+                                                <rect key="frame" x="0.0" y="40" width="314" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i9H-zk-fSD">
+                                                        <rect key="frame" x="0.0" y="1.5" width="30" height="26.5"/>
+                                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="30" id="HBJ-h6-lOe"/>
+                                                            <constraint firstAttribute="height" constant="30" id="k4z-Zh-Nce"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkS-hZ-oSe">
+                                                        <rect key="frame" x="40" y="0.0" width="274" height="30"/>
+                                                        <state key="normal" title="Send Email"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qB-OI-uTm">
+                                        <rect key="frame" x="10" y="105" width="324" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3ee-mu-Ueb"/>
+                                        </constraints>
+                                        <state key="normal" title="See on map">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="U09-4e-ZCR" firstAttribute="leading" secondItem="OgV-JT-fOV" secondAttribute="leading" constant="20" id="79C-1V-zUb"/>
+                                    <constraint firstItem="9qB-OI-uTm" firstAttribute="leading" secondItem="OgV-JT-fOV" secondAttribute="leading" constant="10" id="EWb-99-bjS"/>
+                                    <constraint firstItem="9qB-OI-uTm" firstAttribute="top" secondItem="U09-4e-ZCR" secondAttribute="bottom" constant="15" id="amV-gs-Fy3"/>
+                                    <constraint firstItem="U09-4e-ZCR" firstAttribute="top" secondItem="OgV-JT-fOV" secondAttribute="top" constant="20" id="bn5-uZ-MQd"/>
+                                    <constraint firstAttribute="trailing" secondItem="9qB-OI-uTm" secondAttribute="trailing" constant="10" id="nze-YB-QhI"/>
+                                    <constraint firstAttribute="trailing" secondItem="U09-4e-ZCR" secondAttribute="trailing" constant="10" id="o7o-RR-0mI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="MI8-7q-BVY" secondAttribute="bottom" constant="10" id="Sji-wP-Oel"/>
+                    <constraint firstItem="MI8-7q-BVY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="c46-pi-0kY"/>
+                    <constraint firstItem="MI8-7q-BVY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hMY-Ff-PzS"/>
+                    <constraint firstAttribute="trailing" secondItem="MI8-7q-BVY" secondAttribute="trailing" constant="10" id="qKI-wd-vIG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailButton" destination="nkS-hZ-oSe" id="ooi-E0-UTs"/>
+                <outlet property="phoneNumberButton" destination="w8s-Ox-aqg" id="Aid-vh-ZDM"/>
+                <outlet property="seeOnMapButton" destination="9qB-OI-uTm" id="bgR-ni-VlF"/>
+            </connections>
+            <point key="canvasLocation" x="218.84057971014494" y="206.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

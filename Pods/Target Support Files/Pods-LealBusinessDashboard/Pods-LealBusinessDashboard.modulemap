@@ -1,0 +1,6 @@
+framework module Pods_LealBusinessDashboard {
+  umbrella header "Pods-LealBusinessDashboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
